@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+:root{
+  --color_negroV1: #260A15;
+  --color_marron: #401424;
+  --color_gris_oscuro: #8C8070;
+  --color_gris_claro: #BFB2A3;
+  --color_megroV2: #0D0000;
+  --fuente_contenido: 'quicksand';
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url("./img/fondo.jpg");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container__navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container{
+  height: 140px;
+  padding: 1rem 0 0 1rem ;
+  justify-content: center;
+  align-items: center;
+ border-bottom: .5px solid var(--color_negroV1);
+}
+
+.logo{
+  width: 210px;
+
+}
+
+.container__navbar__body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.container__navbar__links{
+  display: flex; 
+  width: 350px;
+  justify-content: space-around;
+  
+}
+
+
+.nav__item1, .nav__item2{
+  display: flex; 
+  border: 3px solid var(--color_marron);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 2rem;
+  width: 15vh;
+}
+.nav__item2{
+  display: flex; 
+  background-color: var(--color_marron);
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  width: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+.nav__link1{
+  margin: .5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color_marron);
+  font-family: var(--fuente_contenido);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav__link2{
+  margin: .5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color_gris_claro);
+  font-family: var(--fuente_contenido);
+  font-weight: bold;
+}
+
+/*css para el contenido de pagina*/
+
+.container_slide{
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_descripcion{
+  width: 50%;
+  margin: 2rem;
+}
+
+.descripcion_texto{
+  font-family: var(--fuente_contenido);
+  font-size: 1.5rem;
+}
+
+.carousel{
+  width: 50%;
+  box-shadow: 10px 10px 30px var(--color_megroV2);
+  border-radius: 2rem;
+}
+
+.carousel-item, .d-block{
+  border-radius: 2rem;
+}
+
+hr{
+  border: .5px solid var(--color_megroV2);
+  margin: 3rem;
+}
+
+.container_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__planes{
+  background-color: var(--color_marron);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  width: 35vh;
+}
+
+
+.planes_link{
+  text-align: center;
+  text-decoration: none;
+  color: var(--color_gris_claro);
+  font-family: var(--fuente_contenido);
+  margin: 1rem;
+  font-weight: bold;
 }
