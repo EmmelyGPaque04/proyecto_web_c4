@@ -11,6 +11,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Registrarse from "./components/views/Registrarse"
 import Descripcion from "./components/views/Descricion"
 import Planes from "./components/views/Planes";
+import Login from "./components/views/Login";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
            <Route path="/registro" element={<Registrarse/>}></Route> 
            <Route path="/descripcion" element={<Descripcion/>}></Route> 
            <Route path="/planes" element={<Planes/>}></Route> 
+           <Route path="/login" element={<Login/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
