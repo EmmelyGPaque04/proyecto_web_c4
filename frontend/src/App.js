@@ -10,6 +10,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 //importando componentes
 import Registrarse from "./components/views/Registrarse"
 import Descripcion from "./components/views/Descricion"
+import Planes from "./components/views/Planes";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Routes>
            <Route path="/registro" element={<Registrarse/>}></Route> 
            <Route path="/descripcion" element={<Descripcion/>}></Route> 
+           <Route path="/planes" element={<Planes/>}></Route> 
         </Routes>
       </BrowserRouter>
     </div>

@@ -45,7 +45,7 @@ function Descripcion() {
                 <hr />
                 <div className="container_btn">
                     <div className="btn__planes">
-                        <a className="planes_link" href="#seccion2">Conozca nuestros planes</a>
+                        <a className="planes_link" href="/planes">Conozca nuestros planes</a>
                     </div>
                 </div>
             </main>
