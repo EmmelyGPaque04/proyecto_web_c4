@@ -1,0 +1,57 @@
+.container_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    font-family: var(--fuente_titulos);
+    text-align: center;
+    margin: 1rem;
+}
+
+.container__form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    border: 2px solid var(--color_marron);
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.combobox_TipoDocu{
+ display: flex;
+ flex-direction: column;
+ width: 55%;
+}
+
+.options__tipoDocu{
+    padding: .2rem;
+}
+
+.inputs, .labels, .enviar{
+    margin: .5rem;
+    width: 55%;
+}
+
+.labels{
+    font-family: var(--fuente_contenido);
+    color: var(--color_megroV2);
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.enviar{
+    background-color: var(--color_marron);
+    border-radius: 2rem;
+    border: none;
+    color: var(--color_gris_claro);
+    font-family: var(--fuente_contenido);
+    font-weight: bold;
+    padding: 1rem;
+}

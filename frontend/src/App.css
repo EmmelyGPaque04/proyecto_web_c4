@@ -5,7 +5,7 @@
   --color_gris_claro: #BFB2A3;
   --color_megroV2: #0D0000;
   --fuente_contenido: 'quicksand';
-  
+  --fuente_titulos: "Permanent Marker"
 }
 
 body{
@@ -21,6 +21,7 @@ body{
 .container{
   height: 140px;
   padding: 1rem 0 0 1rem ;
+  width: 100%;
   justify-content: center;
   align-items: center;
  border-bottom: .5px solid var(--color_negroV1);
@@ -40,7 +41,7 @@ body{
 
 .container__navbar__links{
   display: flex; 
-  width: 350px;
+  width: 650px;
   justify-content: space-around;
   
 }
@@ -52,10 +53,10 @@ body{
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
-  width: 15vh;
+  width: 20vh;
 }
 .nav__item2{
-  display: flex; 
+
   background-color: var(--color_marron);
   align-items: center;
   justify-content: center;
@@ -79,64 +80,5 @@ body{
   text-decoration: none;
   color: var(--color_gris_claro);
   font-family: var(--fuente_contenido);
-  font-weight: bold;
-}
-
-/*css para el contenido de pagina*/
-
-.container_slide{
-  margin: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container_descripcion{
-  width: 50%;
-  margin: 2rem;
-}
-
-.descripcion_texto{
-  font-family: var(--fuente_contenido);
-  font-size: 1.5rem;
-}
-
-.carousel{
-  width: 50%;
-  box-shadow: 10px 10px 30px var(--color_megroV2);
-  border-radius: 2rem;
-}
-
-.carousel-item, .d-block{
-  border-radius: 2rem;
-}
-
-hr{
-  border: .5px solid var(--color_megroV2);
-  margin: 3rem;
-}
-
-.container_btn{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn__planes{
-  background-color: var(--color_marron);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2rem;
-  width: 35vh;
-}
-
-
-.planes_link{
-  text-align: center;
-  text-decoration: none;
-  color: var(--color_gris_claro);
-  font-family: var(--fuente_contenido);
-  margin: 1rem;
   font-weight: bold;
 }

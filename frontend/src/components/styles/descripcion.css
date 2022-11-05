@@ -1,0 +1,57 @@
+.container_slide{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container_descripcion{
+    width: 50%;
+    margin: 2rem;
+  }
+  
+  .descripcion_texto{
+    font-family: var(--fuente_contenido);
+    font-size: 1.5rem;
+  }
+  
+  .carousel{
+    width: 50%;
+    box-shadow: 10px 10px 30px var(--color_megroV2);
+    border-radius: 2rem;
+  }
+  
+  .carousel-item, .d-block{
+    border-radius: 2rem;
+  }
+  
+  hr{
+    border: .5px solid var(--color_megroV2);
+    margin: 3rem;
+  }
+  
+  .container_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn__planes{
+    background-color: var(--color_marron);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 35vh;
+  }
+  
+  
+  .planes_link{
+    text-align: center;
+    text-decoration: none;
+    color: var(--color_gris_claro);
+    font-family: var(--fuente_contenido);
+    margin: 1rem;
+    font-weight: bold;
+  }
+  
