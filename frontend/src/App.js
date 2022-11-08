@@ -14,6 +14,7 @@ import Planes from "./components/views/Planes";
 import Login from "./components/views/Login";
 import Contacto from "./components/views/Contacto";
 import HomeAdmin from "./components/views/HomeAdmin"
+import Reserva from "./components/views/Reserva";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
            <Route path="/login" element={<Login/>} exact></Route>
            <Route path="/contacto" element={<Contacto/>} exact></Route>
            <Route path="/homeAdmin" element={<HomeAdmin/>} exact></Route>
+           <Route path="/reserva" element={<Reserva/>} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>
