@@ -11,6 +11,10 @@
     margin: 1rem;
 }
 
+.subtitle{
+    font-size: 45px;
+}
+
 .container__form1{
     display: flex;
     flex-direction: column;
@@ -53,4 +57,12 @@
     font-family: var(--fuente_contenido);
     font-weight: bold;
     padding: 1rem;
+}
+
+input[type="date"]{
+    background-color: #ffffff;
+    padding: 15px;
+    font-family: var(--fuente_contenido);
+    outline: none;
+    border-radius: 5px;
 }

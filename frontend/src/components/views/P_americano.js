@@ -2,12 +2,13 @@ import React from "react"
 import "../styles/reserva.css"
 
 
-function Reserva() {
+function P_americano() {
     return (
       <body>
         <main>
           <div className="container_4">
-            <h1 className="titulo">*Hacer una reservación*</h1>
+            <h1 className="titulo">Hacer una reservación</h1>
+            <h2 className="subtitle">*Plan Americano*</h2>
             <form className="container__form1" action="#">
               <label for="nombre" className="labels">Nombres y apellidos</label>
               <input type="text" className="inputs" id="nombre" required placeholder="Nombres y apellidos" />
@@ -25,9 +26,9 @@ function Reserva() {
               </div>
               <label for="telefono" className="labels">Telefono</label>
               <input type="text" id="telefono" className="inputs" required placeholder="(XX) XXXX XXXX" />
-              <label for="fecha__inicio" className="labels"></label>
+              <label for="fecha__inicio" className="labels">Fecha inicio</label>
               <input type="date" id="fecha__inicio"/>
-              <label for="fecha__finalizacion"></label>
+              <label for="fecha__finalizacion" className="labels">Fecha Finalizacion</label>
               <input type="date" id="fecha__finalizacion"/>
               <input type="submit" value="Hacer reserva" className="enviar"></input>
             </form>
@@ -36,4 +37,4 @@ function Reserva() {
       </body>
     )
   }
-  export default Reserva;
+  export default P_americano;

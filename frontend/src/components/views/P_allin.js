@@ -2,12 +2,13 @@ import React from "react"
 import "../styles/reserva.css"
 
 
-function Reserva() {
+function Reserva_Allin() {
     return (
       <body>
         <main>
           <div className="container_4">
-            <h1 className="titulo">*Hacer una reservación*</h1>
+            <h1 className="titulo">Hacer una reservación</h1>
+            <h2 className="subtitle">*Plan All-In*</h2>
             <form className="container__form1" action="#">
               <label for="nombre" className="labels">Nombres y apellidos</label>
               <input type="text" className="inputs" id="nombre" required placeholder="Nombres y apellidos" />
@@ -36,4 +37,4 @@ function Reserva() {
       </body>
     )
   }
-  export default Reserva;
+  export default Reserva_Allin;

@@ -14,7 +14,13 @@ import Planes from "./components/views/Planes";
 import Login from "./components/views/Login";
 import Contacto from "./components/views/Contacto";
 import HomeAdmin from "./components/views/HomeAdmin"
+//Importando planes de reserva
 import Reserva from "./components/views/Reserva";
+import P_americano from "./components/views/P_americano";
+import P_americano_MO from "./components/views/P_americano_MO";
+import P_europeo from "./components/views/P_europeo";
+import P_continental from "./components/views/P_continental";
+import P_allin from "./components/views/P_allin";
 
 function App() {
   return (
@@ -49,6 +55,11 @@ function App() {
            <Route path="/contacto" element={<Contacto/>} exact></Route>
            <Route path="/homeAdmin" element={<HomeAdmin/>} exact></Route>
            <Route path="/reserva" element={<Reserva/>} exact></Route>
+           <Route path="/reserva_americano" element={<P_americano/>} exact></Route>
+           <Route path="/reserva_americano_mo" element={<P_americano_MO/>} exact></Route>
+           <Route path="/reserva_europeo" element={<P_europeo/>} exact></Route>
+           <Route path="/reserva_continental" element={<P_continental/>} exact></Route>
+           <Route path="/reserva_allin" element={<P_allin/>} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>
