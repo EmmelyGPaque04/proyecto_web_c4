@@ -1,4 +1,4 @@
-.container{
+.container_3{
     width: 100%;
     max-width: 1200px;
     height: 430px;
@@ -8,7 +8,7 @@
     margin: auto;
 }
 
-.container .card{
+.container_3 .card{
     width: 330px;
     height: 430px;
     border-radius: 8px;
@@ -20,12 +20,12 @@
 
 }
 
-.container .card:hover{
+.container_3 .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container .card img{
+.container_3 .card img{
     width: 330px;
     height: 220px;
 
@@ -39,7 +39,7 @@
     font-size: 15px;
 }
 
-.container .card a{
+.container_3 .card a{
     font-family: var(--fuente_titulos);
     margin: 1rem;
     border: 2px solid var(--color_marron);

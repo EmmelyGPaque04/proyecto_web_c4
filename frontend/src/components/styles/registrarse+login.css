@@ -55,3 +55,23 @@
     font-weight: bold;
     padding: 1rem;
 }
+
+.buttons__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.recuperar_contrasenha{
+    margin: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color_marron);
+    font-family: var(--fuente_contenido);
+    font-weight: bold;
+    border: 3px solid var(--color_marron);
+    border-radius: 2rem;
+    width: 30vh;
+    padding: .8rem;
+}

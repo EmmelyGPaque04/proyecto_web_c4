@@ -6,7 +6,7 @@ import habitacion1 from "../../img/habitacion1.jpg";
 
 function Planes() {
   return (
-    <div className="container">
+    <div className="container_3">
         <div className="card">
             <img src={habitacion1} alt="card_image"/>
             <h4 className="card__title">Americano</h4>

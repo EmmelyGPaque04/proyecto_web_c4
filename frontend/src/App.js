@@ -12,6 +12,8 @@ import Registrarse from "./components/views/Registrarse"
 import Descripcion from "./components/views/Descricion"
 import Planes from "./components/views/Planes";
 import Login from "./components/views/Login";
+import Contacto from "./components/views/Contacto";
+import HomeAdmin from "./components/views/HomeAdmin"
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
             <nav className="container__navbar__body">
               <ul className="container__navbar__links">
               <li className="nav__item1">
-                  <a className="nav__link1" href="/descripcion">Servicios</a>
+                  <a className="nav__link1" href="/contacto">Contactanos</a>
                 </li>
                 <li className="nav__item1">
                   <a className="nav__link1" href="/registro">Registrarse</a>
@@ -35,13 +37,16 @@ function App() {
             </nav>
           </div>
         </header>
+      
       </body>
       <BrowserRouter>
         <Routes>
-           <Route path="/registro" element={<Registrarse/>}></Route> 
-           <Route path="/descripcion" element={<Descripcion/>}></Route> 
-           <Route path="/planes" element={<Planes/>}></Route> 
-           <Route path="/login" element={<Login/>}></Route>
+           <Route path="/registro" element={<Registrarse/>} exact></Route> 
+           <Route path="/" element={<Descripcion/>} exact></Route> 
+           <Route path="/planes" element={<Planes/>} exact></Route> 
+           <Route path="/login" element={<Login/>} exact></Route>
+           <Route path="/contacto" element={<Contacto/>} exact></Route>
+           <Route path="/homeAdmin" element={<HomeAdmin/>} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>

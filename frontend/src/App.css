@@ -12,6 +12,15 @@ body{
   background-image: url("./img/fondo.jpg");
 }
 
+label , input, p{
+  font-family: var(--fuente_contenido);
+}
+
+h1 ,h2, h3, h4, h5, h6{
+  font-family: var(--fuente_titulos);
+}
+
+
 .container__navbar{
   display: flex;
   justify-content: space-around;

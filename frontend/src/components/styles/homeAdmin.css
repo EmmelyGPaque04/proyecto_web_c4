@@ -1,0 +1,39 @@
+.container_cards{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.content_cards, .body_cards{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 70%;
+    justify-content: left;
+    border-radius: 2rem;
+}
+
+.body_cards{
+    display: flex;
+    width: 40%;
+    background-color: white;
+    margin: 2rem;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: left;
+}
+
+.titulo_cards{
+   text-align: center;
+   color: var(--color_megroV2);
+   font-weight: bold;
+   font-size: 1.5rem;
+   margin-left: .1rem;
+}
+
+.body_cards:hover{
+    box-shadow: 10px 10px 10px var(--color_gris_oscuro);
+}
