@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 let PlanesSchema = new mongoose.Schema({
     idPlan: Number,
-    descripcion: Number,
+    descripcion: String,
     tipoHabitacion: String,
     costo: Number,
     fechaCaducidad: Date,

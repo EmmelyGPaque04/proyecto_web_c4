@@ -4,7 +4,8 @@ let UserSchema = new mongoose.Schema({
     idUser: Number,
     nombres: String,
     apellidos: String,
-    edad: Number,
+    telefono: Number,
+    correo: String
 });
 
 module.exports = mongoose.model('user', UserSchema, 'users')
