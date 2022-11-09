@@ -22,6 +22,10 @@ import P_europeo from "./components/views/P_europeo";
 import P_continental from "./components/views/P_continental";
 import P_allin from "./components/views/P_allin";
 
+//importando menu de administrador
+import GestionUsu from "./components/views/GestionUsuarios";
+import GestionCuartos from "./components/views/GestionCuartos"
+
 function App() {
   return (
     <div className="App">
@@ -60,6 +64,8 @@ function App() {
            <Route path="/reserva_europeo" element={<P_europeo/>} exact></Route>
            <Route path="/reserva_continental" element={<P_continental/>} exact></Route>
            <Route path="/reserva_allin" element={<P_allin/>} exact></Route>
+           <Route path="/gestionUsuarios" element={<GestionUsu/>} exact></Route>
+           <Route path="/gestionCuartos" element={<GestionCuartos/>} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>

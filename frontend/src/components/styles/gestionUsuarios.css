@@ -1,0 +1,17 @@
+.table{
+    justify-content: center;
+    margin: auto;
+}
+
+.bi, .btn{
+    margin-right: .7rem;
+}
+
+th, td{
+    text-align: center;
+}
+
+.titulo_reporte{
+    text-align: center;
+    margin: 1rem;
+}

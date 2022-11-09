@@ -10,13 +10,13 @@ function HomeAdmin() {
             <body>
                 <div className="container_cards">
                     <div className="body_cards">
-                        <a className="content_cards" href="#">
+                        <a className="content_cards" href="/gestionUsuarios">
                             <img className="iconos_cards" src={Ico_Usuarios} alt="" />
                             <p className="titulo_cards">Gestion de Usuarios</p>
                         </a>
                     </div>
                     <div className="body_cards">
-                        <a className="content_cards" href="#">
+                        <a className="content_cards" href="/gestionCuartos">
                             <img className="iconos_cards" src={Ico_habiaciones} alt="" />
                             <p className="titulo_cards">Gestion de habitaciones</p>
                         </a>
