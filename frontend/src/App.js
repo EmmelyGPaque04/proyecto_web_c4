@@ -25,6 +25,7 @@ import P_allin from "./components/views/P_allin";
 //importando menu de administrador
 import GestionUsu from "./components/views/GestionUsuarios";
 import GestionCuartos from "./components/views/GestionCuartos"
+import GestionServicios from "./components/views/GestionServicios";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
            <Route path="/reserva_allin" element={<P_allin/>} exact></Route>
            <Route path="/gestionUsuarios" element={<GestionUsu/>} exact></Route>
            <Route path="/gestionCuartos" element={<GestionCuartos/>} exact></Route>
+           <Route path="/gestionServicios" element={<GestionServicios/>} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>

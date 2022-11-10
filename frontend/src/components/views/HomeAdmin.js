@@ -22,7 +22,7 @@ function HomeAdmin() {
                         </a>
                     </div>
                     <div className="body_cards">
-                        <a className="content_cards" href="#">
+                        <a className="content_cards" href="gestionServicios">
                             <img className="iconos_cards" src={Ico_Servicios} alt="" />
                             <p className="titulo_cards">Gestion de Servicios</p>
                         </a>
