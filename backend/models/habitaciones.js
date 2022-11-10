@@ -6,7 +6,7 @@ let HabitacionesSchema = new mongoose.Schema({
     tipoHabitacion: String,
     costoHabitacion: Number,
     disponibilidad: Boolean,
-
+    bloque: String
 });
 
 module.exports = mongoose.model('habitacion', HabitacionesSchema, 'habitaciones')
