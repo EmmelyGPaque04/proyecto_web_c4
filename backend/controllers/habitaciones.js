@@ -30,11 +30,11 @@ router.get("/habitaciones/:id", (req, res) => {
 //Crear un nuevo registro
 router.post('/habitaciones', (req, res) => {
     let NuevaHabitacion = new HabitacionesSchema({
-        idHabitacion: req.body.id,
-        numeroHabitacion: req.body.numero,
-        tipoHabitacion: req.body.tipo,
-        costoHabitacion: req.body.costo,
-        dispoibilidad:  req.body.disponible
+        idHabitacion: req.body.idHabitacion,
+        numeroHabitacion: req.body.numeroHabitacion,
+        tipoHabitacion: req.body.tipoHabitacion,
+        costoHabitacion: req.body.costoHabitacion,
+        dispoibilidad:  req.body.dispoibilidad
     })
     NuevaHabitacion.save(function (err, datos){
         if(err){
