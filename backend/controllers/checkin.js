@@ -17,13 +17,13 @@ router.get('/check', (req, res) => {
 
 
 router.post('/check', (req, res) => {
-    let CheckinSchema = new HabitacionesSchema({
-        idCheckin: req.body.id,
-        tipoHabitacion: req.body.habitacion,
-        fechaCaducidad: req.body.caducidad,
-        estado: req.body.estado,
+    let NuevaCheckinSchema = new CheckinSchema({
+        idCheckin: req.body.idCheckin,
+        tipoHabitacion: req.body.tipoHabitacion,
+        fechaCaducidad: req.body.fechaCaducidad,
+        estado: req.body.estado
     })
-    CheckinSchema.save(function (err, datos){
+    NuevaCheckinSchema.save(function (err, datos){
         if(err){
             console.log(err);
         }

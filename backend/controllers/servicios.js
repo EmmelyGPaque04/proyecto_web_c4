@@ -25,14 +25,14 @@ router.get("/servicios/:id", (req, res) => {
 
 
 router.post('/servicios', (req, res) => {
-    let ServiciosSchema = new HabitacionesSchema({
-        idServicio: req.body.id,
-        numeroServicio: req.body.numero,
-        tipoServicio: req.body.servicio,
-        costoServicio: req.body.costo,
+    let NuevoServiciosSchema = new ServiciosSchema({
+        idServicio: req.body.idServicio,
+        numeroServicio: req.body.numeroServicio,
+        tipoServicio: req.body.tipoServicio,
+        costoServicio: req.body.costoServicio,
         disponibilidad: req.body.disponibilidad,
     })
-    ServiciosSchema.save(function (err, datos){
+    NuevoServiciosSchema.save(function (err, datos){
         if(err){
             console.log(err);
         }

@@ -5,7 +5,7 @@ let ReservaSchema = new mongoose.Schema({
     codigoReserva: Number,
     fechaReserva: Date,
     fechaFin: Date,
-    tipoHabitacion: Boolean,
+    tipoHabitacion: String,
     cantidadPersonas: Number,
     CantidadDias: Date,
 

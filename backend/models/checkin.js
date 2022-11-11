@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 let CheckinSchema = new mongoose.Schema({
     idCheckin: Number,
-    tipoHabitacion: Number,
+    tipoHabitacion: String,
     fechaCaducidad: Date,
     estado: Boolean
 });

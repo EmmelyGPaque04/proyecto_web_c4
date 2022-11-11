@@ -26,13 +26,14 @@ router.get("/register/:id", (req, res) => {
 
 
 router.post('/register', (req, res) => {
-    let UserSchema = new HabitacionesSchema({
-        idUser: req.body.id,
+    let NuevoUserSchema = new UserSchema({
+        idUser: req.body.idUser,
         nombres: req.body.nombres,
         apellidos: req.body.apellidos,
-        edad: req.body.edad,
+        telefono: req.body.telefono,
+        correo : req.body.correo
     })
-    UserSchema.save(function (err, datos){
+    NuevoUserSchema.save(function (err, datos){
         if(err){
             console.log(err);
         }

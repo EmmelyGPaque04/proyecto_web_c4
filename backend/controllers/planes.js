@@ -24,16 +24,15 @@ router.get("/planes/:id", (req, res) => {
   });
 
 router.post('/planes', (req, res) => {
-    let PlanesSchema = new HabitacionesSchema({
-        idReserva: req.body.id,
-        codigoReserva: req.body.descripcion,
-        fechaReserva: req.body.habitacion,
-        fechaFin: req.body.caducidad,
-        tipoHabitacion: req.body.disponibilidad,
-        cantidadPersonas: req.body.costo,
-        CantidadDias: req.body.dias
+    let NuevoPlanesSchema = new PlanesSchema({
+        idPlan: req.body.idPlan,
+        descripcion: req.body.descripcion,
+        tipoHabitacion: req.body.tipoHabitacion,
+        costo: req.body.costo,
+        fechaCaducidad: req.body.fechaCaducidad,
+        disponibilidad: req.body.disponibilidad,
     })
-    PlanesSchema.save(function (err, datos){
+    NuevoPlanesSchema.save(function (err, datos){
         if(err){
             console.log(err);
         }

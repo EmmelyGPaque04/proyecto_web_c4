@@ -25,16 +25,16 @@ router.get("/reserva/:id", (req, res) => {
 
 
 router.post('/reserva', (req, res) => {
-    let ReservaSchema = new HabitacionesSchema({
-        idReserva: req.body.id,
-        codigoReserva: req.body.codigo,
-        fechaReserva: req.body.fechainicio,
+    let NuevaReservaSchema = new ReservaSchema({
+        idReserva: req.body.idReserva,
+        codigoReserva: req.body.codigoReserva,
+        fechaReserva: req.body.fechaReserva,
         fechaFin: req.body.fechafin,
-        tipoHabitacion: req.body.habitacion,
-        cantidadPersonas: req.body.personas,
-        CantidadDias: req.body.dias
+        tipoHabitacion: req.body.tipoHabitacion,
+        cantidadPersonas: req.body.cantidadPersonas,
+        CantidadDias: req.body.CantidadDias
     })
-    ReservaSchema.save(function (err, datos){
+    NuevaReservaSchema.save(function (err, datos){
         if(err){
             console.log(err);
         }
