@@ -25,6 +25,6 @@ app.use("/api", checkinRoute, habitacionesRoute, planesRoute, reservaRoute, serv
 
 // Servidor Local
 app.use(router)
-app.listen(3000, () => {
+app.listen(3002, () => {
     console.log("Corriendo en puerto: 3000");
 })

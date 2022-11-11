@@ -57,7 +57,7 @@ function Login() {
         <main>
           <div className="container_2">
             <h1 className="titulo">Iniciar sesión</h1>
-            <form className="container__form" action="homeCliente">
+            <form className="container__form" action="/">
               <label for="nombre" className="labels">Correo o nombre de Usuario</label>
               <input type="text" className="inputs" id="nombre" required placeholder="Correo o Nombre de usuario" />
               <div className="combobox_TipoDocu">
