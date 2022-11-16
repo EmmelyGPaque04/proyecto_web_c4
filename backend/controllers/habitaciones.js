@@ -34,7 +34,8 @@ router.post('/habitaciones', (req, res) => {
         numeroHabitacion: req.body.numeroHabitacion,
         tipoHabitacion: req.body.tipoHabitacion,
         costoHabitacion: req.body.costoHabitacion,
-        dispoibilidad:  req.body.dispoibilidad
+        bloque: req.body.bloque,
+        disponibilidad:  req.body.disponibilidad
     })
     NuevaHabitacion.save(function (err, datos){
         if(err){

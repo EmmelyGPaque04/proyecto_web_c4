@@ -5,7 +5,7 @@ let HabitacionesSchema = new mongoose.Schema({
     numeroHabitacion: Number,
     tipoHabitacion: String,
     costoHabitacion: Number,
-    disponibilidad: Boolean,
+    disponibilidad: String,
     bloque: String
 });
 

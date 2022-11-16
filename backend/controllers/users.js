@@ -31,7 +31,10 @@ router.post('/register', (req, res) => {
         nombres: req.body.nombres,
         apellidos: req.body.apellidos,
         telefono: req.body.telefono,
-        correo : req.body.correo
+        correo : req.body.correo,
+        NumeroDoc: req.body.NumeroDoc,
+        TipoDoc: req.body.TipoDoc,
+        Contrasenha: req.body.Contrasenha
     })
     NuevoUserSchema.save(function (err, datos){
         if(err){

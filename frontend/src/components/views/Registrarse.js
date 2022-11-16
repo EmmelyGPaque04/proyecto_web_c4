@@ -8,8 +8,10 @@ function Registrarse() {
         <div className="container_2">
           <h1 className="titulo">Crear nuevo Usuario</h1>
           <form className="container__form" action="/login">
-            <label for="nombre" className="labels">Nombres y apellidos</label>
-            <input type="text" className="inputs" id="nombre" required placeholder="Nombres y apellidos" />
+            <label for="nombre" className="labels">Nombres</label>
+            <input type="text" className="inputs" id="nombre" required placeholder="Nombres" />
+            <label for="apellidos" className="labels">Apellidos</label>
+            <input type="text" className="inputs" id="apellidos" required placeholder="Apellidos" />
             <label for="correo" className="labels">Correo Electronico</label>
             <input type="email" className="inputs" id="correo" required placeholder="email@dominio.com" />
             <label for="docu" className="labels">Numero de documento</label>

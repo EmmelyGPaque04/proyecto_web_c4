@@ -2,10 +2,9 @@ const mongoose = require('mongoose');
 
 let ServiciosSchema = new mongoose.Schema({
     idServicio: Number,
-    numeroServicio: Number,
-    tipoServicio: String,
+    planAsignado: String,
     costoServicio: Number,
-    disponibilidad: Boolean,
+    disponibilidad: String,
 });
 
 module.exports = mongoose.model('servicio', ServiciosSchema, 'servicios')

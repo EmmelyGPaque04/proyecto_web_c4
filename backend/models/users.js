@@ -5,7 +5,10 @@ let UserSchema = new mongoose.Schema({
     nombres: String,
     apellidos: String,
     telefono: Number,
-    correo: String
+    correo: String,
+    NumeroDoc: Number,
+    TipoDoc: String,
+    Contrasenha: String
 });
 
 module.exports = mongoose.model('user', UserSchema, 'users')

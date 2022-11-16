@@ -27,8 +27,7 @@ router.get("/servicios/:id", (req, res) => {
 router.post('/servicios', (req, res) => {
     let NuevoServiciosSchema = new ServiciosSchema({
         idServicio: req.body.idServicio,
-        numeroServicio: req.body.numeroServicio,
-        tipoServicio: req.body.tipoServicio,
+        planAsignado: req.body.planAsignado,
         costoServicio: req.body.costoServicio,
         disponibilidad: req.body.disponibilidad,
     })
