@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios"
 import "../styles/gestionCuartos.css"
 
@@ -12,6 +13,14 @@ function GestionCuartos() {
             setDataHabitaciones(res.data)
         }).catch(err => { console.log(err.stack) })
     }, [])
+
+    function EliminarUsuario(idHabitacion) {
+        axios.post('api/habitaciones', { _id: idHabitacion }).then(res => {
+            console.log(res.data)
+          }).catch(err =>{
+            console.log(err)
+          })
+    }
 
     return (
         <main>
@@ -39,10 +48,9 @@ function GestionCuartos() {
                                 <td>{habitacion.bloque}</td>
                                 <td>{habitacion.disponibilidad}</td>
                                 <td>
-                                    <a href="#" className="btn btn-outline-light"><i className="bi bi-info-circle-fill"></i>Ver detalles</a>
-                                    <a href="#" className="btn btn-outline-light"><i className="bi bi-pencil-fill"></i>Editar</a>
-                                    <a href="#" className="btn btn-outline-light"><i className="bi bi-plus-circle-fill"></i>Agregar</a>
-                                    <a href="#" className="btn btn-outline-light"><i class="bi bi-trash3-fill"></i>Eliminar</a>
+                                    <Link to={`/editarhabitacion/${habitacion._id}`}><li className="btn btn-outline-light"><i className="bi bi-pencil-fill"></i>Editar</li></Link>
+                                    <Link to={"/newhabitacion"}className="btn btn-outline-light"><i className="bi bi-plus-circle-fill"></i>Agregar</Link>
+                                    <button className="btn btn-outline-light" onClick={()=>{EliminarUsuario(habitacion._id)}}><i class="bi bi-trash3-fill"></i>Eliminar</button>
                                 </td>
                             </tr>
                         ))

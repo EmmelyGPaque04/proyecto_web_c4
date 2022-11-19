@@ -27,6 +27,10 @@ import GestionUsu from "./components/views/GestionUsuarios";
 import GestionCuartos from "./components/views/GestionCuartos"
 import GestionServicios from "./components/views/GestionServicios";
 
+//iportando el crud para las habitaciones
+import AgregarHabitacion from "./components/views/crud Habitaciones/AgregarHabitacion";
+import EditarHabitacion from "./components/views/crud Habitaciones/EditarHabitacion";
+
 function App() {
   return (
     <div className="App">
@@ -68,6 +72,8 @@ function App() {
            <Route path="/gestionUsuarios" element={<GestionUsu/>} exact></Route>
            <Route path="/gestionCuartos" element={<GestionCuartos/>} exact></Route>
            <Route path="/gestionServicios" element={<GestionServicios/>} exact></Route>
+           <Route path="/newhabitacion" element={<AgregarHabitacion/>} exact></Route>
+           <Route path="/editarhabitacion/:_id" element={<EditarHabitacion/>} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>

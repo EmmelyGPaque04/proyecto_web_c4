@@ -17,7 +17,7 @@ router.get('/habitaciones', (req, res) => {
 })
 
 
-//Traer todos solo un registro
+//Traer solo un registro
 router.get("/habitaciones/:id", (req, res) => {
     const { id } = req.params;
     HabitacionesSchema
@@ -57,7 +57,7 @@ router.delete("/habitaciones/:id", (req, res) => {
 
 
 //Actualizar un registro
-router.put("/habitaciones/:id", (req, res) => {
+router.delete("/habitaciones/:id", (req, res) => {
     const { id } = req.params;
     const body = req.body;
     HabitacionesSchema

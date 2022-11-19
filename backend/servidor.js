@@ -4,6 +4,9 @@ const express= require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 const app= express();
+const bodyparser = require('body-parser');
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({extended:true}));
 
 // Middlewares
 app.use(express.urlencoded({extend: true}));
